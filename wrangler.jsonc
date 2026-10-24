@@ -1,0 +1,14 @@
+// Cloudflare settings for thedrift3r.com.
+// This tells Cloudflare: "serve the files in the public folder as a website".
+// There's no server code and no database.
+{
+  "name": "thedrift3r",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": "./public",
+    // Unknown addresses show public/404.html
+    "not_found_handling": "404-page",
+    // /privacy serves privacy.html (no ".html" needed in links)
+    "html_handling": "auto-trailing-slash"
+  }
+}
