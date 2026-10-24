@@ -146,6 +146,29 @@ section { scroll-margin-top: 64px; }
 .play:hover .play-icon { transform: scale(1.06); }
 .embed-note { margin: 0; color: var(--muted); font-size: 0.8rem; text-align: center; }
 
+/* Album covers behind the play buttons.
+   Only a round play button sits on the art, in a quiet corner,
+   so the artwork stays clean. The small note sits under the cover. */
+.embed.has-cover {
+  aspect-ratio: 16 / 9; min-height: 0; padding: 14px;
+  background-size: cover; background-position: center;
+}
+.embed.cover-rise-up {
+  /* sky and title on top, mountains bottom-left: button bottom-left */
+  background-image: url("/images/cover-rise-up.webp");
+  justify-content: flex-end; align-items: flex-start;
+}
+.embed.cover-glassline {
+  /* lettering at the bottom, empty black top-left: button top-left */
+  background-image: url("/images/cover-glassline.webp");
+  justify-content: flex-start; align-items: flex-start;
+}
+.has-cover .play-icon { width: 54px; height: 54px; box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.35), 0 0 30px rgba(212, 166, 74, 0.45); }
+.has-cover .play-icon::after { left: 22px; top: 17px; border-left-width: 15px; border-top-width: 10px; border-bottom-width: 10px; }
+.player > .embed-note { text-align: left; margin-top: -2px; }
+/* once SoundCloud loads, give its playlist room */
+.embed-audio.is-loaded { aspect-ratio: auto; height: 450px; }
+
 /* ---------- Releases ---------- */
 .releases { padding: 24px 16px 64px; }
 .release-list { list-style: none; margin: 0 0 32px; padding: 0; display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
