@@ -10,5 +10,8 @@
     "not_found_handling": "404-page",
     // /privacy serves privacy.html (no ".html" needed in links)
     "html_handling": "auto-trailing-slash"
-  }
+  },
+  // Lets branch builds (like site-v1) get their own preview link before merging.
+  // It can stay empty: the settings above apply to previews too.
+  "previews": {}
 }
