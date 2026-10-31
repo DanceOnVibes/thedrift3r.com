@@ -185,7 +185,6 @@ section { scroll-margin-top: 64px; }
 }
 
 /* ---------- Message ---------- */
-.message blockquote { margin: 0 0 18px; padding-left: 18px; border-left: 2px solid var(--gold); }
 .motto { margin: 0; color: var(--gold); font-style: italic; letter-spacing: 0.03em; }
 
 /* ---------- Follow ---------- */
