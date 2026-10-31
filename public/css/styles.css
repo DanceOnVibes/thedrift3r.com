@@ -183,6 +183,7 @@ section { scroll-margin-top: 64px; }
   border-top: 1px solid rgba(212, 166, 74, 0.1);
   border-bottom: 1px solid rgba(212, 166, 74, 0.1);
 }
+.driftmix-actions { margin: 28px 0 12px; }
 
 /* ---------- Message ---------- */
 .message blockquote { margin: 0 0 18px; padding-left: 18px; border-left: 2px solid var(--gold); }
