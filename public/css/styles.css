@@ -169,7 +169,7 @@ section { scroll-margin-top: 64px; }
 /* once SoundCloud loads, give its playlist room */
 .embed-audio.is-loaded { aspect-ratio: auto; height: 450px; }
 
-/* ---------- Releases ---------- */
+/* ---------- Albums ---------- */
 .releases { padding: 24px 16px 64px; }
 .release-list { list-style: none; margin: 0 0 32px; padding: 0; display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
 .release-list li { background: var(--bg); padding: 18px 20px; }
@@ -196,7 +196,8 @@ section { scroll-margin-top: 64px; }
 /* ---------- Follow ---------- */
 .follow { padding: 24px 16px 72px; }
 .follow-links { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 12px; grid-template-columns: 1fr; }
-@media (min-width: 720px) { .follow-links { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 560px) { .follow-links { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .follow-links { grid-template-columns: repeat(4, 1fr); } }
 .follow-links a {
   display: flex; flex-direction: column; gap: 2px; padding: 18px 20px;
   border: 1px solid var(--line); border-radius: 14px; text-decoration: none;
