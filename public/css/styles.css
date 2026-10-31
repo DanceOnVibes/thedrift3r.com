@@ -169,13 +169,8 @@ section { scroll-margin-top: 64px; }
 /* once SoundCloud loads, give its playlist room */
 .embed-audio.is-loaded { aspect-ratio: auto; height: 450px; }
 
-/* ---------- Albums ---------- */
-.releases { padding: 24px 16px 64px; }
-.release-list { list-style: none; margin: 0 0 32px; padding: 0; display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
-.release-list li { background: var(--bg); padding: 18px 20px; }
-.release-list h3 { margin: 0; color: var(--silver); font: 400 1.3rem/1.3 var(--serif); }
-.release-list p { margin: 4px 0 0; color: var(--muted); font-size: 0.95rem; }
-.tracks-title { margin: 0 0 12px; color: var(--gold); font: 600 0.8rem/1 var(--sans); letter-spacing: 0.22em; text-transform: uppercase; }
+/* ---------- Tracks (under Listen) ---------- */
+.tracks-title { margin: 36px 0 12px; color: var(--gold); font: 600 0.8rem/1 var(--sans); letter-spacing: 0.22em; text-transform: uppercase; }
 .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li { border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 0.9rem; }
 
@@ -196,13 +191,14 @@ section { scroll-margin-top: 64px; }
 /* ---------- Follow ---------- */
 .follow { padding: 24px 16px 72px; }
 .follow-links { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 12px; grid-template-columns: 1fr; }
-@media (min-width: 560px) { .follow-links { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 960px) { .follow-links { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 560px) { .follow-links { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); } }
 .follow-links a {
   display: flex; flex-direction: column; gap: 2px; padding: 18px 20px;
   border: 1px solid var(--line); border-radius: 14px; text-decoration: none;
   background: var(--bg-raised); transition: border-color 0.15s ease, transform 0.15s ease;
 }
+.follow-links li { display: flex; }
+.follow-links li > a { flex: 1; }
 .follow-links a:hover { border-color: var(--gold); transform: translateY(-2px); }
 .follow-links span { color: var(--silver); font: 400 1.3rem var(--serif); }
 .follow-links small { color: var(--muted); font-size: 0.88rem; }
