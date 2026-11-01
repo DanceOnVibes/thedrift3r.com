@@ -154,9 +154,8 @@ section { scroll-margin-top: 64px; }
   background-size: cover; background-position: center;
 }
 .embed.cover-rise-up {
-  /* sky and title on top, mountains bottom-left: button bottom-left */
-  background-image: url("/images/cover-rise-up.webp");
-  justify-content: flex-end; align-items: flex-start;
+  /* the gold glow until the new cover (standing, fist raised) is in */
+  justify-content: center; align-items: center;
 }
 .embed.cover-glassline {
   /* lettering at the bottom, empty black top-left: button top-left */
