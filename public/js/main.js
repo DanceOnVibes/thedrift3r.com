@@ -1,7 +1,7 @@
 // The Drift3r — small helpers.
 //
 // 1) Click-to-load players.
-//    YouTube and SoundCloud players are NOT loaded when the page opens.
+//    SoundCloud players are NOT loaded when the page opens.
 //    They load only when someone presses play. That means the site sets
 //    no cookies by itself, and the page opens faster.
 document.querySelectorAll('[data-embed]').forEach(function (box) {
