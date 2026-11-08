@@ -154,8 +154,10 @@ section { scroll-margin-top: 64px; }
   background-size: cover; background-position: center;
 }
 .embed.cover-rise-up {
-  /* the gold glow until the new cover (standing, fist raised) is in */
-  justify-content: center; align-items: center;
+  /* title at the top, sunrise below it: button bottom-left, beside the sun */
+  background-image: url("/images/cover-rise-up.webp");
+  background-position: center 40%;
+  justify-content: flex-end; align-items: flex-start;
 }
 .embed.cover-same-heartbeat {
   /* title in the middle, empty dark area below it: button bottom-left */
