@@ -159,10 +159,9 @@ section { scroll-margin-top: 64px; }
   background-position: center 40%;
   justify-content: flex-end; align-items: flex-start;
 }
-.embed.cover-same-heartbeat {
-  /* title in the middle, empty dark area below it: button bottom-left */
-  background-image: url("/images/cover-same-heartbeat.webp");
-  background-position: center 45%;
+.embed.cover-one-heartbeat {
+  /* 16:9 album card, name centred, empty corners: button bottom-left */
+  background-image: url("/images/cover-one-heartbeat.webp");
   justify-content: flex-end; align-items: flex-start;
 }
 .embed.cover-glassline {
