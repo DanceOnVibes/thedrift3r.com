@@ -157,9 +157,11 @@ section { scroll-margin-top: 64px; }
   /* the gold glow until the new cover (standing, fist raised) is in */
   justify-content: center; align-items: center;
 }
-.embed.cover-one-heartbeat {
-  /* the gold glow, like Rise Up, until its cover is in */
-  justify-content: center; align-items: center;
+.embed.cover-same-heartbeat {
+  /* title in the middle, empty dark area below it: button bottom-left */
+  background-image: url("/images/cover-same-heartbeat.webp");
+  background-position: center 45%;
+  justify-content: flex-end; align-items: flex-start;
 }
 .embed.cover-glassline {
   /* lettering at the bottom, empty black top-left: button top-left */
