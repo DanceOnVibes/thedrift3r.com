@@ -153,10 +153,9 @@ section { scroll-margin-top: 64px; }
   aspect-ratio: 16 / 9; min-height: 0; padding: 14px;
   background-size: cover; background-position: center;
 }
-.embed.cover-rise-up {
-  /* title at the top, sunrise below it: button bottom-left, beside the sun */
-  background-image: url("/images/cover-rise-up.webp");
-  background-position: center 40%;
+.embed.cover-voice {
+  /* 16:9 album card, name and mouth centred, empty corners: button bottom-left */
+  background-image: url("/images/cover-voice.webp");
   justify-content: flex-end; align-items: flex-start;
 }
 .embed.cover-one-heartbeat {
