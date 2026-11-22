@@ -153,6 +153,11 @@ section { scroll-margin-top: 64px; }
   aspect-ratio: 16 / 9; min-height: 0; padding: 14px;
   background-size: cover; background-position: center;
 }
+.embed.cover-mood-drift {
+  /* 16:9 album card, name and key staircase centred, empty corners: button bottom-left */
+  background-image: url("/images/cover-mood-drift.webp");
+  justify-content: flex-end; align-items: flex-start;
+}
 .embed.cover-voice {
   /* 16:9 album card, name and mouth centred, empty corners: button bottom-left */
   background-image: url("/images/cover-voice.webp");
